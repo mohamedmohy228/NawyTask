@@ -10,7 +10,6 @@ readonly cartButton: Locator;
 readonly cartitem: Locator;
 readonly logoutButton: Locator;
 
-//========================variables======================
 
 //========================constructor========================
 constructor(page: Page) {
@@ -23,7 +22,6 @@ constructor(page: Page) {
     this.logoutButton = page.locator('#logout2');
 
 }
-//========================methods========================
 
 //========================actions========================
 async addToCart() {
