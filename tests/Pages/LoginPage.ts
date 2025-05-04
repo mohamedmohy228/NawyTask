@@ -1,5 +1,4 @@
 import { expect, type Locator, type Page } from '@playwright/test';
-//import { signupPage } from './SignUpPage';
 
 export class LoginPage {
     //========================locators========================
@@ -11,13 +10,11 @@ export class LoginPage {
     readonly loginSuccessMsg: Locator;
 
     //========================variables========================
-    //readonly signupv: signupPage;
     loginSuccesstext: string;
 
     //========================constructor========================
     constructor(page: Page) {
-        // this.page = page;
-        // this.signupv = signupv;
+  
 
         this.loginButton = page.locator('#login2');
         this.userNameInput = page.locator('#loginusername');
@@ -32,7 +29,7 @@ export class LoginPage {
     async userlogin() {
         await this.loginButton.click();
         await this.userNameInput.waitFor({ state: 'visible' });
-        await this.userNameInput.fill("mohamedmohy"); // Use the stored username directly
+        await this.userNameInput.fill("mohamedmohy"); 
         await this.passwordInput.fill("123456");
         await this.loginsubmitbutton.click();
     }
