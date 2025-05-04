@@ -2,9 +2,11 @@
 
 ## Project Structure
 ```
-/src        - Contains the source code
-/tests      - Contains all test files
-/docs       - Documentation files
+/src         - Contains the source code
+/tests       - Contains all test files
+/tests/Pages - Contains all the pages with the locators and their functions
+/test/spec   - Contains all the test cases 
+/docs        - Documentation files
 ```
 
 ## How to Run the Tests
