@@ -15,7 +15,7 @@ test.beforeEach(async ({ page }) => {
   await page.goto('https://www.demoblaze.com/');
 
   signup = new signupPage(page);
-  loginPage = new LoginPage(page); // Pass the signup instance to LoginPage
+  loginPage = new LoginPage(page); 
   homepage = new HomePage(page);
   orderPage = new OrderPage(page);
 });
@@ -27,7 +27,7 @@ test.describe.serial('User Flow', () => {
   });
 
   test('login', async ({ page }) => {
-    await loginPage.userlogin(); // Login using the credentials from the signup
+    await loginPage.userlogin(); 
     await loginPage.assertLoginSuccess();
   });
 
