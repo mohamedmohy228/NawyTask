@@ -14,7 +14,6 @@ readonly yearInput: Locator;
 readonly purchaseButton: Locator;
 readonly successMessage: Locator;
 
-//========================variables======================
 
 //========================constructor========================
 constructor(page: Page) {
@@ -31,7 +30,6 @@ constructor(page: Page) {
     this.successMessage = page.locator("//h2[normalize-space()='Thank you for your purchase!']");
 
 }
-//========================methods========================
 
 //========================actions========================
 async placeOrder() {
