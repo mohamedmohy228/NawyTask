@@ -20,11 +20,7 @@ constructor(page: Page) {
     this.SignupSubmitButton = page.locator("button[onclick='register()']");
     this.page = page;   
 }
-//========================methods========================
-// async getUpdatedUserName(): Promise<string> {
-//     // Return the stored username directly
-//     return this.userName;
-// }
+
 //========================actions========================
 async signup() {
     await this.signupButton.click();
